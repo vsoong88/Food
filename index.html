@@ -13,26 +13,55 @@
   
   .gallery > div {
     background-color: blue;
-    height: 100px;
+    line-height: 200px;
+    height: 200px;
     border: 2px solid black;
     padding: 20px;
     text-align: center;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 30px;
+    text-shadow: 0 0 10px white;
+    color: black; 
+    background-position: center;
+    background-size: cover;
   }
+  
+  .gallery > div:hover {
+    color: #F2F906;
+    border: 2px;
+  }
+  
+  .foodgallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  
+  .foodgallery > div {
+    background-color: blue;
+    height: 200px;
+    border: 2px solid black;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  ul {
+    text-align: center;
+    list-style-position: inside;
+    font-size: 20px;
+    font-family: monospace; 
+	}
   
 </style>
 
-<body bgcolor="grey" text="pink">
+<body bgcolor=#F1F296 text=#461A71>
   <center>
     <br>
-    <h1>Vivian's Inner Fat Boy</h1>
-    
-    <h3>United States</h3>
+    <h1 style="font-family: monospace">Vivian's Inner Fat Boy</h1>
     
     <section class="gallery">
-        <div>Boston</div>
-        <div>Chicago</div>
+        <div style="background-image: url(Boston.jpeg)">BOSTON</div>
+        <div style="background-image: url(Chicago.jpeg)">CHICAGO</div>
         <ul>
             <li>Bova's Bakery</li>
             <li>Mamma Maria</li>
@@ -59,39 +88,62 @@
           	<li>Au Cheval</li>
           	<li>The Purple Pig</li>
         </ul>
-      
-        <div>Los Angeles</div>
-        <div>New York City</div>
-      	<ul>
+    	</section>
+    	<section class="foodgallery">
+        	<section class="foodgallery">
+        			<div style="background-image: url(Boston1.jpg)"></div>
+        			<div style="background-image: url(Boston2.jpg)"></div>
+        	</section>
+        
+        	<section class="foodgallery">
+        			<div style="background-image: url(Chicago1.jpg)"></div>
+        			<div style="background-image: url(Chicago2.jpg)"></div>
+        			<div style="background-image: url(Chicago3.jpg)"></div>
+        			<div style="background-image: url(Chicago4.jpg)"></div>
+            	<div style="background-image: url(Chicago3.jpg)"></div>
+        			<div style="background-image: url(Chicago4.jpg)"></div>
+            	<div style="background-image: url(Chicago3.jpg)"></div>
+        			<div style="background-image: url(Chicago4.jpg)"></div>
+            	<div style="background-image: url(Chicago3.jpg)"></div>
+        			<div style="background-image: url(Chicago4.jpg)"></div>
+        	</section>
+    	</section>
+        
+      <section class="gallery">
+        <div style="background-image: url(LosAngeles.jpeg)">LOS ANGELES</div>
+        <div style="background-image: url(NewYorkCity.jpeg)">NEW YORK CITY</div>
+        <ul>
             <li>Sidecar Doughnuts</li>
             <li>Elephante</li>
             <li>B Sweet Dessert Bar</li>
             <li>Katsu Sando</li>
             <li>Pasta Sisters</li>
             <li>Urth Caffe</li>
-          	<li>The Window</li>
-          	<li>Mochinut</li>
-          	<li>Courage Bagels</li>
-          	<li>SQRL</li>
+            <li>The Window</li>
+            <li>Mochinut</li>
+            <li>Courage Bagels</li>
+            <li>SQRL</li>
         </ul>
-      	<ul>
+        
+        <ul>
             <li>Dominique Ansel Bakery</li>
-            <li>Nom Wah Tea Parlor</li>
-            <li>Joe's Pizza</li>
+            <li>Nami Nori</li>
             <li>Boqueria</li>
-            <li>Davelle</li>
+            <li>Levain</li>
+            <li>Joe's Pizza</li>
             <li>Xi'an Famous Foods</li>
-          	<li>Little Cupcaek Bakeshop</li>
-          	<li>Levain</li>
-          	<li>Nami Nori</li>
-          	<li>Eileen's Special Cheesecake</li>
+            <li>Little Cupcake Bakeshop</li>
+            <li>Nom Wah Tea Parlor</li>
+            <li>Davelle</li>
+            <li>Eileen's Special Cheesecake</li>
+          	<li>Sarabeth's</li>
         </ul>
+
     </section>
     
-    <h3>International</h3>
     <section class="gallery">
-        <div>London</div>
-        <div>Paris</div>
+        <div style="background-image: url(London.jpeg)">LONDON</div>
+        <div style="background-image: url(Paris.jpeg)">PARIS</div>
       	<ul>
             <li>Tokyo Diner</li>
             <li>Gloria</li>
@@ -104,6 +156,9 @@
             <li>Laduree</li>
             <li>Popelini</li>
           	<li>Soon</li>
+          	<li>L'As du Fallafel</li>
+          	<li>Rose Bakery</li>
+          	<li>Odette</li>
         </ul>
 		</section>
   </center>
